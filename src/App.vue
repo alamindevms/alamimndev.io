@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<main class="h-screen w-full flex flex-col justify-between bg-blueGray-800 relative">
+		<Header />
+		<div class="h-full flex justify-center items-center">
+			<input type="text" class="h-10 w-4/12 px-4 text-blueGray-200 bg-blueGray-900 border border-blueGray-600 rounded-md placeholder-blueGray-500 placeholder-opacity-50 focus:outline-none focus:ring-1 focus:ring-blueGray-700 focus:shadow-2xl" placeholder="Search me ( about / portfolio / address )" />
+		</div>
+		<Footer />
+	</main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/header.vue"
+import Footer from "./components/footer.vue"
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: "App",
+	components: {
+		Header,
+		Footer,
+	},
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
