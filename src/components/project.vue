@@ -14,7 +14,7 @@
 				</svg>
 			</button>
 		</div>
-		<div class="px-4 lg:px-10 py-6 lg:py-16 w-full lg:w-10/12 mx-auto space-y-2 lg:space-y-6">
+		<div class="px-4 lg:px-10 py-6 lg:py-12 w-full lg:w-10/12 mx-auto space-y-2 lg:space-y-6">
 			<h1 class="text-3xl font-semibold text-gray-700">Project</h1>
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 				<div class="col-span-1 bg-gray-50 rounded-md overflow-hidden relative group">

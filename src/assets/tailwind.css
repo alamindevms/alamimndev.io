@@ -3,3 +3,43 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.text-outline {
+	opacity: 0.5;
+	color: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	user-select: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: #18223170;
+	-webkit-text-stroke-color: #18202e;
+	-webkit-text-stroke-width: 1px;
+}
+
+.text-outline.path {
+	background: #182130b8;
+	height: 200px;
+	width: 200px;
+	border-radius: 0 300px 0 0;
+}
+
+.text-outline.path.second {
+	background: #182130b8;
+	height: 180px;
+	width: 180px;
+	border-radius: 0 300px 0 0;
+}
+
+@media (max-width: 600px) {
+	.text-outline.path {
+		height: 150px;
+		width: 150px;
+	}
+
+	.text-outline.path.second {
+		height: 120px;
+		width: 120px;
+	}
+}

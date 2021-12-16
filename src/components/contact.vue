@@ -8,7 +8,7 @@
 				Project
 			</button>
 		</div>
-		<div class="p-4 lg:p-10 w-full lg:w-10/12 mx-auto space-y-2 lg:space-y-6 h-full">
+		<div class="p-4 lg:p-5 w-full lg:w-10/12 mx-auto space-y-2 lg:space-y-6">
 			<h1 class="text-3xl font-semibold text-gray-700">Get In Touch</h1>
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 				<div class="col-span-1 bg-blueGray-100 rounded-md p-4">
