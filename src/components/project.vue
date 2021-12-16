@@ -14,9 +14,9 @@
 				</svg>
 			</button>
 		</div>
-		<div class="px-10 py-16 w-10/12 mx-auto space-y-6">
+		<div class="px-4 lg:px-10 py-6 lg:py-16 w-full lg:w-10/12 mx-auto space-y-2 lg:space-y-6">
 			<h1 class="text-3xl font-semibold text-gray-700">Project</h1>
-			<div class="grid grid-cols-3 gap-4">
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 				<div class="col-span-1 bg-gray-50 rounded-md overflow-hidden relative group">
 					<div class="absolute inset-0 bg-gray-900 bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-300 cursor-pointer">
 						<a href="https://scape.com.bd/" target="_blank" class="h-full w-full flex items-center justify-center">

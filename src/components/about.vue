@@ -8,8 +8,8 @@
 				</svg>
 			</button>
 		</div>
-		<div class="flex gap-10 px-10 py-16 w-10/12 mx-auto">
-			<div class="w-96">
+		<div class="flex flex-col lg:flex-row gap-5 lg:gap-10 px-4 lg:px-10 py-6 lg:py-16 w-full lg:w-10/12 mx-auto">
+			<div class="w-full lg:w-96">
 				<img class="h-auto w-full rounded-md" src="assets/images/alamin.jpg" alt="" />
 			</div>
 			<div class="flex-1 space-y-6 py-4">
@@ -19,15 +19,14 @@
 				</div>
 				<div class="space-y-2">
 					<p class="text-sm text-gray-600 leading-5 font-light">
-						Hi, I'm from Bangladesh. <br />
-						I'm pationate with my duty. Working as frontend developer in a local IT company.
+						Hi, I'm Bangladeshi. <br />
+						I'm passionate about my duty. Working as a frontend developer in a local IT company.
 					</p>
-					<p class="text-sm text-gray-600 leading-5 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, reprehenderit alias rerum ab aliquid libero incidunt. Aperiam sapiente quibusdam impedit.</p>
-					<p class="text-sm text-gray-600 leading-5 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, reprehenderit alias rerum ab aliquid libero incidunt. Aperiam sapiente quibusdam impedit.</p>
+					<p class="text-sm text-gray-600 leading-5 font-light">Basically, I do the front part of an application. But I know little about backend and API. I'm very excited to learn backend.</p>
 				</div>
 				<div class="flex gap-4 items-center">
 					<button @click="$emit('changeModel', 'project')" class="bg-blueGray-700 hover:bg-blueGray-800 px-4 py-2 rounded-md text-white text-sm transition-all duration-300">Project</button>
-					<button @click="$emit('changeModel', 'project')" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-md text-white text-sm transition-all duration-300">Download CV</button>
+					<a href="assets/images/alamin.jpg" download class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-md text-white text-sm transition-all duration-300">Download CV</a>
 				</div>
 			</div>
 		</div>
