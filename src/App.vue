@@ -2,20 +2,60 @@
 	<main class="h-screen w-full flex flex-col justify-between bg-blueGray-800 relative">
 		<Header />
 		<div class="h-full flex justify-center items-center">
-			<input type="text" class="h-10 w-4/12 px-4 text-blueGray-200 bg-blueGray-900 border border-blueGray-600 rounded-md placeholder-blueGray-500 placeholder-opacity-50 focus:outline-none focus:ring-1 focus:ring-blueGray-700 focus:shadow-2xl" placeholder="Search me ( about / portfolio / address )" />
+			<input type="text" @change="searchMe($event)" class="h-10 w-4/12 px-4 text-blueGray-200 bg-blueGray-900 border border-blueGray-600 rounded-md placeholder-blueGray-500 placeholder-opacity-50 focus:outline-none focus:ring-1 focus:ring-blueGray-700 focus:shadow-2xl" placeholder="Search me ( about / portfolio / address )" />
 		</div>
 		<Footer />
 	</main>
+
+	<about v-if="searchValue == 'profile'" @changeModel="cheangePage($event)" />
+	<project v-else-if="searchValue == 'project'" @changeModel="cheangePage($event)" />
+	<contact v-else-if="true" @changeModel="cheangePage($event)" />
+	<!-- <contact v-else-if="searchValue == 'contact'" @changeModel="cheangePage($event)" /> -->
+	<not-found v-else-if="searchValue == 'not-found'" @changeModel="cheangePage($event)" />
 </template>
 
 <script>
 import Header from "./components/header.vue"
 import Footer from "./components/footer.vue"
+import About from "./components/about.vue"
+import Project from "./components/project.vue"
+import Contact from "./components/contact.vue"
+import NotFound from "./components/notfound.vue"
 export default {
 	name: "App",
 	components: {
 		Header,
 		Footer,
+		About,
+		Project,
+		Contact,
+		NotFound,
+	},
+	data() {
+		return {
+			showMe: null,
+			searchValue: null,
+		}
+	},
+	methods: {
+		searchMe(event) {
+			let searchInput = event.target.value
+
+			if (searchInput == "about" || searchInput == "profile") {
+				this.searchValue = "profile"
+			} else if (searchInput == "project" || searchInput == "portfolio" || searchInput == "demo") {
+				this.searchValue = "project"
+			} else if (searchInput == "contact" || searchInput == "address" || searchInput == "chat") {
+				this.searchValue = "contact"
+			} else {
+				this.searchValue = "not-found"
+			}
+
+			console.log(this.showHide)
+		},
+		cheangePage(value) {
+			this.searchValue = value
+		},
 	},
 }
 </script>
