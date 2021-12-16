@@ -1,6 +1,6 @@
 # alamindev-portfolio
 
-## Project setup
+## Project setup [Live](https://alamindevms.github.io/alamindev.io/)
 ```
 yarn install
 ```
